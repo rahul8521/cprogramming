@@ -10,7 +10,7 @@ int main()
     printf("Enter the selling price of an item: ");
     scanf("%f", &selling_price);
 
-    if (selling_price > cost_price)   //here we get profit on selling item
+    if (selling_price > cost_price)   // we get profit on selling item
     {
         //calculate profit via selling price - cost price
         profit = selling_price - cost_price;
@@ -18,16 +18,11 @@ int main()
 
     }
 
-    else if (selling_price < cost_price)   //here we get loss on selling item
+    else if (selling_price < cost_price)   // we get loss on selling item
     {
         //calculate loss via cost price - selling price
         loss = cost_price - selling_price;
         printf("\nWe incurred %.2f loss on selling item.", loss);
     }
 
-    else    //here we don't get any loss and profit on selling item when (cost price == selling price)
-    {
-    	 printf("\nWe don't get any loss and profit on selling item");
-    	 
-    }
 }
